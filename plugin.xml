@@ -4,8 +4,8 @@
     <description>Cordova Unsubscribe Plugin for hydrovigie</description>
     <license>Apache 2.0</license>
     <keywords>cordova,unsubscribe,hydrovigie</keywords>
-    <repo>https://si-devops-gitlab.edf.fr/hyd-mobile-cih/mobile/hydrovigie/cordova-plugin-hyd-unsubscribe.git</repo>
-    <issue>https://si-devops-gitlab.edf.fr/hyd-mobile-cih/mobile/hydrovigie/cordova-plugin-hyd-unsubscribe/issues</issue>
+    <repo>https://github.com/sdiabi/cordova-plugin-hyd-unsubscribe.git</repo>
+    <issue>https://github.com/sdiabi/cordova-plugin-hyd-unsubscribe/issues</issue>
     <author>EDF/CIH</author>
 
     <engines>
