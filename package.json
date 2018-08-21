@@ -1,0 +1,23 @@
+{
+  "name": "cordova-plugin-hyd-unsubscribe",
+  "version": "1.0.0",
+  "description": "Cordova Unsubscribe Plugin for hydrovigie",
+  "main": "index.js",
+  "scripts": {
+    "sync_plugin_xml": "sync-cordova-xml package.json plugin.xml --output=plugin.xml",
+    "version": "npm run sync_plugin_xml && git add plugin.xml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://si-devops-gitlab.edf.fr/hyd-mobile-cih/mobile/hydrovigie/cordova-plugin-hyd-unsubscribe.git"
+  },
+  "keywords": [
+    "cordova",
+    "hydrovigie"
+  ],
+  "author": "EDF/CIH",
+  "license": "ISC",
+  "devDependencies": {
+    "sync-cordova-xml": "^0.4.0"
+  }
+}
