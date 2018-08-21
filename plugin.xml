@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-hyd-unsubscribe" version="0.1">
+    <name>cordova-plugin-hyd-unsubscribe</name>
+    <description>Cordova Unsubscribe Plugin for hydrovigie</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,unsubscribe,hydrovigie</keywords>
+    <repo>https://si-devops-gitlab.edf.fr/hyd-mobile-cih/mobile/hydrovigie/cordova-plugin-hyd-unsubscribe.git</repo>
+    <issue>https://si-devops-gitlab.edf.fr/hyd-mobile-cih/mobile/hydrovigie/cordova-plugin-hyd-unsubscribe/issues</issue>
+    <author>EDF/CIH</author>
+
+    <engines>
+        <engine name="cordova" version=">=7.0.0"/>
+    </engines>
+
+    <js-module src="www/unsubscribe.js" name="unsubscribe">
+        <clobbers target="unsubscribe" />
+    </js-module>
+
+    <!-- This plugin work only with android platform -->
+    <platform name="android">
+        <js-module src="www/android/unsubscribe.js" name="unsubscribe">
+            <clobbers target="window.Unsubscribe"/>
+        </js-module>
+        <config-file target="config.xml" parent="/*">
+            <feature name="Unsubscribe">
+                <param name="android-package" value="fr.edf.cih.hydrovigie.Unsubscribe.Unsubscribe" onload="true"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/Unsubscribe.java" target-dir="src/fr/edf/cih/hydrovigie/unsubscribe"/>
+    </platform>
+
+</plugin>
